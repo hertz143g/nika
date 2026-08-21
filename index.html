@@ -3,123 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Ника — персональный ИИ-репетитор, который помогает ребёнку разобраться со школьной программой."
-    />
+    <meta name="description" content="Ника — персональный ИИ-репетитор для школьников 1–11 классов." />
     <meta name="theme-color" content="#ffffff" />
     <title>Ника — персональный ИИ-репетитор</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
-    <main class="page" aria-label="Ника — персональный ИИ-репетитор">
-      <div
-        class="desktop-layout"
-        role="img"
-        aria-label="Полная десктопная версия лендинга Ника"
-      ></div>
-
-      <div class="mobile-layout">
-        <section id="intro" aria-label="Первый экран и как это работает">
-          <img
-            src="./assets/nika-mobile-01.png"
-            width="390"
-            height="1369"
-            alt="Ребёнок не понял тему в школе? Ника объяснит по-другому"
-            fetchpriority="high"
-          />
-        </section>
-        <section aria-label="Знакомые ситуации">
-          <img
-            src="./assets/nika-mobile-02.png"
-            width="390"
-            height="1068"
-            alt="Знакомые ситуации при выполнении школьных заданий"
-            loading="lazy"
-          />
-        </section>
-        <section id="how-it-works" aria-label="От вопроса до понимания">
-          <img
-            src="./assets/nika-mobile-03.png"
-            width="390"
-            height="800"
-            alt="Четыре шага от вопроса до понимания"
-            loading="lazy"
-          />
-        </section>
-        <section aria-label="Объяснение разными способами">
-          <img
-            src="./assets/nika-mobile-04.png"
-            width="390"
-            height="1261"
-            alt="Одну тему можно объяснить по-разному"
-            loading="lazy"
-          />
-        </section>
-        <section aria-label="Школьные предметы">
-          <img
-            src="./assets/nika-mobile-05.png"
-            width="390"
-            height="1012"
-            alt="Один помощник для основных школьных предметов"
-            loading="lazy"
-          />
-        </section>
-        <section id="features" aria-label="Возможности Ники">
-          <img
-            src="./assets/nika-mobile-06.png"
-            width="390"
-            height="939"
-            alt="Всё необходимое, чтобы разобраться со школьной программой"
-            loading="lazy"
-          />
-        </section>
-        <section id="parents" aria-label="Для родителей">
-          <img
-            src="./assets/nika-mobile-07.png"
-            width="390"
-            height="1338"
-            alt="Самостоятельные занятия ребёнка и прогресс для родителей"
-            loading="lazy"
-          />
-        </section>
-        <section aria-label="Сравнение вариантов помощи">
-          <img
-            src="./assets/nika-mobile-08.png"
-            width="390"
-            height="967"
-            alt="Сравнение Ники с поиском, универсальным ИИ и репетитором"
-            loading="lazy"
-          />
-        </section>
-        <section id="start" aria-label="Начать заниматься">
-          <img
-            src="./assets/nika-mobile-09.png"
-            width="390"
-            height="1287"
-            alt="Форма заявки, чтобы начать заниматься с Никой"
-            loading="lazy"
-          />
-        </section>
-        <section id="faq" aria-label="Частые вопросы">
-          <img
-            src="./assets/nika-mobile-10.png"
-            width="390"
-            height="870"
-            alt="Частые вопросы о Нике"
-            loading="lazy"
-          />
-        </section>
-        <footer aria-label="Подвал сайта">
-          <img
-            src="./assets/nika-mobile-11.png"
-            width="390"
-            height="701"
-            alt="Навигация, документы и контакты"
-            loading="lazy"
-          />
-        </footer>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#top" aria-label="Ника — на главную">Ника</a>
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="#how">Как это работает?</a><a href="#features">Возможности</a><a href="#parents">Для родителей</a><a href="#faq">FAQ</a>
+        </nav>
+        <a class="button button-dark header-cta" href="#start"><span class="desktop-label">Заниматься!</span><span class="mobile-label">Начать!</span></a>
       </div>
+    </header>
+
+    <main id="main">
+      <section class="section hero" id="top">
+        <div class="dots dots-right" aria-hidden="true"></div><div class="dots dots-left" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="sparkles" aria-hidden="true">✧</span>
+            <h1>Ребёнок не понял<br />тему в школе? <mark>Ника</mark><br />объяснит по-другому!</h1>
+            <p class="hero-lead">Персональный ИИ-репетитор, который помогает разобраться в школьной программе, объясняет задания по фото и отвечает на вопросы столько раз, сколько потребуется.</p>
+            <ul class="benefit-chips" aria-label="Преимущества">
+              <li><span aria-hidden="true">▱</span> Объясняет по-разному</li><li><span aria-hidden="true">▣</span> Помогает по фото</li>
+              <li><span aria-hidden="true">⌂</span> Для 1–11 классов</li><li><span aria-hidden="true">▥</span> Предметы школьной программы</li>
+            </ul>
+            <div class="hero-actions"><a class="button button-dark" href="#start">Начать заниматься <span aria-hidden="true">→</span></a><a class="button button-outline desktop-only" href="#how">Как это работает?</a></div>
+          </div>
+          <div class="hero-art"><h2 class="mobile-how-title">Как это работает?</h2><img src="./assets/illustrations/hero-phone.png" width="540" height="660" alt="Пример объяснения задачи в чате с Никой" /></div>
+        </div>
+      </section>
+
+      <section class="section situations" aria-labelledby="situations-title">
+        <div class="container">
+          <h2 id="situations-title">Знакомые <mark>ситуации?</mark></h2>
+          <div class="situation-grid">
+            <article class="card situation-card"><div class="icon-blob" aria-hidden="true">📖</div><div><h3>Домашнее задание занимает весь вечер</h3><p>Ребёнок долго сидит над одной задачей, нервничает и постоянно просит помощи.</p></div></article>
+            <article class="card situation-card"><div class="icon-blob" aria-hidden="true">?</div><div><h3>«Я вообще ничего не понял на уроке»</h3><p>Новую тему объяснили слишком быстро, а ребёнок постеснялся переспросить.</p></div></article>
+            <article class="card situation-card"><div class="icon-blob" aria-hidden="true">💬</div><div><h3>Вы пытаетесь объяснить сами</h3><p>Но школьная программа давно забылась, а ваши объяснения ребёнку не подходят.</p></div></article>
+            <article class="card situation-card"><div class="icon-blob" aria-hidden="true">📝</div><div><h3>Ответ найден, но понимания нет</h3><p>Решение можно переписать, но решить похожую задачу ребёнок всё ещё не может.</p></div></article>
+            <article class="card situation-card"><div class="icon-blob" aria-hidden="true">📈</div><div><h3>Пробелы постепенно накапливаются</h3><p>Без понимания базовых тем каждая следующая глава становится сложнее.</p></div></article>
+            <article class="card situation-card"><div class="icon-blob" aria-hidden="true">🗓</div><div><h3>Вопросы появляются каждый день</h3><p>А урок с репетитором или консультация учителя будут только через несколько дней.</p></div></article>
+          </div>
+          <picture class="situation-illustration"><source media="(max-width: 640px)" srcset="./assets/illustrations/situations-girl.png" /><img src="./assets/illustrations/situations-desktop.png" width="980" height="350" alt="Ника объясняет тему простыми словами и без осуждения" /></picture>
+        </div>
+      </section>
+
+      <section class="section steps" id="how" aria-labelledby="steps-title">
+        <div class="container">
+          <h2 id="steps-title">От вопроса до понимания — <mark>шаг за шагом</mark></h2>
+          <ol class="steps-grid">
+            <li class="card step-card"><span class="step-number">01</span><div class="step-icon" aria-hidden="true">?</div><h3>Расскажите,<br />что непонятно</h3><p>Ребёнок пишет вопрос своими словами или выбирает предмет и тему.</p></li>
+            <li class="card step-card"><span class="step-number">02</span><div class="step-icon" aria-hidden="true">📱</div><h3>Или отправьте<br />фото задания</h3><p>Ника распознает условие задачи и поможет разобраться, с чего начать решение.</p></li>
+            <li class="card step-card"><span class="step-number">03</span><div class="step-icon" aria-hidden="true">🧑‍🏫</div><h3>Получите понятное объяснение</h3><p>Ника разбирает тему последовательно, приводит примеры и объясняет логику решения.</p></li>
+            <li class="card step-card"><span class="step-number">04</span><div class="step-icon" aria-hidden="true">↻</div><h3>Не понятно?<br />Объяснит иначе</h3><p>Можно попросить более простое объяснение, другой пример или подробный разбор.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section explanation" aria-labelledby="explanation-title"><div class="container"><h2 id="explanation-title">Одну тему можно объяснить <mark>по-разному</mark></h2><picture class="explanation-art"><source media="(max-width: 640px)" srcset="./assets/illustrations/explanation-demo.png" /><img src="./assets/illustrations/explanation-desktop.png" width="1180" height="650" alt="Два варианта объяснения уравнения в Нике" /></picture></div></section>
+
+      <section class="section capabilities" id="features" aria-labelledby="capabilities-title">
+        <div class="container"><h2 id="capabilities-title">Всё необходимое, чтобы разобраться<br /><mark>со школьной программой</mark></h2>
+          <div class="capability-grid">
+            <article class="card feature-card"><div class="feature-art" aria-hidden="true">💬 ✏️</div><h3>Вопросы своими словами</h3><p>Не нужно формулировать запрос как в учебнике. Ребёнок может просто написать, что именно ему непонятно.</p></article>
+            <article class="card feature-card"><div class="feature-art" aria-hidden="true">📱 📝</div><h3>Разбор задания по фото</h3><p>Можно сфотографировать домашнюю работу и получить помощь с условием, правилами и ходом решения.</p></article>
+            <article class="card feature-card"><div class="feature-art" aria-hidden="true">☑ ①②③</div><h3>Пошаговые объяснения</h3><p>Ника помогает пройти путь от условия задачи до ответа, объясняя каждый этап.</p></article>
+            <article class="card feature-card"><div class="feature-art" aria-hidden="true">📝 ↔ 💡</div><h3>Объяснение другим способом</h3><p>Если ребёнок не понял, Ника упрощает формулировку, приводит аналогию или показывает другой пример.</p></article>
+            <article class="card feature-card"><div class="feature-art" aria-hidden="true">🔎 🧩</div><h3>Поиск пробелов в знаниях</h3><p>Если проблема связана с предыдущей темой, Ника поможет вернуться к базе и повторить необходимый материал.</p></article>
+            <article class="card feature-card"><div class="feature-art" aria-hidden="true">📈 👨‍👩‍👧</div><h3>Прогресс для родителя</h3><p>Родитель видит, какие темы ребёнок изучал и где ему потребовалась дополнительная помощь.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section subjects" aria-labelledby="subjects-title">
+        <div class="container subjects-wrap"><h2 id="subjects-title"><mark>Один помощник</mark><br />для основных школьных предметов</h2>
+          <div class="subject-grid">
+            <article class="card subject-card"><div class="subject-art" aria-hidden="true">📐 ⅓</div><h3>Математика</h3><p>Задачи, дроби, уравнения, проценты, геометрия и другие темы школьной программы.</p></article>
+            <article class="card subject-card"><div class="subject-art" aria-hidden="true">📖 ✏️</div><h3>Русский язык</h3><p>Правила, разбор предложений, части речи, орфография и работа над ошибками.</p></article>
+            <article class="card subject-card"><div class="subject-art" aria-hidden="true">Hello! 🇬🇧</div><h3>Английский язык</h3><p>Грамматика, школьные упражнения, перевод, лексика и объяснение правил на понятных примерах.</p></article>
+            <article class="card subject-card"><div class="subject-art" aria-hidden="true">🌍 ⚗️</div><h3>Другие предметы</h3><p>Физика, биология, история и другие школьные темы — главное простыми словами.</p></article>
+          </div><img class="subjects-illustration" src="./assets/illustrations/subjects-girl.png" width="390" height="340" alt="Ника — один помощник для разных предметов" />
+        </div>
+      </section>
+
+      <section class="section comparison" aria-labelledby="comparison-title">
+        <div class="container"><h2 id="comparison-title">Не готовый ответ,<br /><mark>а персональное объяснение</mark></h2>
+          <div class="table-scroll" tabindex="0" aria-label="Сравнительную таблицу можно прокрутить по горизонтали"><table>
+            <thead><tr><th>Критерий</th><th class="nika-col">Ника ♡</th><th>Поиск в интернете</th><th>Универсальный ИИ</th><th>Репетитор</th></tr></thead>
+            <tbody><tr><th>Доступность в момент возникновения вопроса</th><td class="nika-col">Да</td><td>Да</td><td>Да</td><td>По расписанию</td></tr><tr><th>Можно отправить фото задания</th><td class="nika-col">Да</td><td>Ограниченно</td><td>Зависит от сервиса</td><td>Да</td></tr><tr><th>Можно попросить объяснить другим способом</th><td class="nika-col">Да</td><td>Нужно искать новый материал</td><td>Да</td><td>Да</td></tr><tr><th>Специализированный сценарий обучения</th><td class="nika-col">Да</td><td>Нет</td><td>Нет</td><td>Да</td></tr><tr><th>Помощь по нескольким предметам</th><td class="nika-col">Да</td><td>Да</td><td>Да</td><td>Обычно ограниченно</td></tr><tr><th>Прогресс для родителя</th><td class="nika-col">Да</td><td>Нет</td><td>Нет</td><td>Зависит от специалиста</td></tr></tbody>
+          </table></div><p class="comparison-note"><span aria-hidden="true">⭐</span> Ника не заменяет учителя или репетитора. Она помогает ребёнку в тот момент, когда возник вопрос и нужно ещё раз разобраться в теме.</p>
+        </div>
+      </section>
+
+      <section class="section parents" id="parents" aria-labelledby="parents-title">
+        <div class="container parents-grid"><div class="parents-copy"><h2 id="parents-title">Ребёнок занимается самостоятельно.<br />Вы понимаете,<br /><mark>где нужна помощь</mark></h2><p>Не нужно каждый вечер проверять все задания и заново проходить школьную программу вместе с ребёнком.</p>
+          <ul class="parent-benefits"><li><span aria-hidden="true">☑</span><div><h3>Меньше споров из-за уроков</h3><p>Ребёнок сначала пробует разобраться с помощью Ники.</p></div></li><li><span aria-hidden="true">🔎</span><div><h3>Понятно, какие темы вызывают сложности</h3><p>В прогрессе видно, где ребёнку потребовалось повторное объяснение.</p></div></li><li><span aria-hidden="true">🔔</span><div><h3>Можно вовремя заметить пробелы</h3><p>Если сложности повторяются, родитель понимает, на какую тему стоит обратить внимание.</p></div></li></ul>
+        </div><picture class="progress-art"><source media="(max-width: 640px)" srcset="./assets/illustrations/progress-device.png" /><img src="./assets/illustrations/progress-desktop.png" width="520" height="680" alt="Экран прогресса обучения по предметам" /></picture></div>
+      </section>
+
+      <section class="section signup" id="start" aria-labelledby="signup-title">
+        <div class="container"><h2 id="signup-title">Начните заниматься с <mark>Никой</mark></h2><div class="signup-grid">
+          <form class="signup-form" id="signup-form" novalidate>
+            <div class="field"><label for="grade">В каком классе учится ребёнок?</label><select id="grade" name="grade" required><option value="">Выберите класс</option><option>1–4 класс</option><option>5–7 класс</option><option>8–9 класс</option><option>10–11 класс</option></select></div>
+            <fieldset><legend>С чем сейчас нужна помощь?</legend><div class="check-grid"><label><input type="checkbox" name="subject" value="math" /> Математика</label><label><input type="checkbox" name="subject" value="russian" /> Русский язык</label><label><input type="checkbox" name="subject" value="english" /> Английский язык</label><label><input type="checkbox" name="subject" value="homework" /> Домашние задания</label><label><input type="checkbox" name="subject" value="exam" /> Подготовка к экзамену</label></div></fieldset>
+            <fieldset><legend>Заполните необходимые данные</legend><div class="inputs"><label><span class="sr-only">Имя ребёнка</span><input name="childName" placeholder="Имя ребёнка" autocomplete="off" required /></label><label><span class="sr-only">Ваше имя</span><input name="parentName" placeholder="Ваше имя" autocomplete="name" required /></label><label><span class="sr-only">Телефон или e-mail</span><input name="contact" placeholder="Телефон или e-mail" autocomplete="email" required /></label></div></fieldset>
+            <label class="consent"><input type="checkbox" name="consent" required /> <span>Я принимаю условия обработки <a href="#privacy">персональных данных</a></span></label><button class="button button-dark submit-button" type="submit"><span aria-hidden="true">✣</span> Начать заниматься!</button><p class="no-card">* Не нужна банковская карта</p><p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+          <picture class="signup-art"><source media="(max-width: 640px)" srcset="./assets/illustrations/signup-girl.png" /><img src="./assets/illustrations/signup-desktop.png" width="650" height="770" alt="Ника приглашает не откладывать сложный вопрос" /></picture>
+        </div></div>
+      </section>
+
+      <section class="section faq" id="faq" aria-labelledby="faq-title"><div class="container"><h2 id="faq-title">Возможно, Вы хотите <mark>уточнить</mark></h2><div class="accordion">
+        <details><summary>Сколько будет стоить использование Ники?</summary><p>Условия и стоимость появятся перед подключением. Оставить заявку можно без банковской карты.</p></details><details><summary>Что произойдёт после отправки заявки?</summary><p>Мы свяжемся с вами по указанному контакту, расскажем о доступе и поможем начать.</p></details><details><summary>Нужна ли банковская карта для заявки?</summary><p>Нет, для отправки заявки банковская карта не нужна.</p></details><details><summary>Насколько можно доверять объяснениям Ники?</summary><p>Ника создана для последовательного разбора школьных тем. Важные ответы всегда можно перепроверить с учителем.</p></details><details><summary>Будет ли Ника сразу давать готовые ответы?</summary><p>Нет. Главная задача Ники — помочь ребёнку понять ход решения и научиться справляться самостоятельно.</p></details><details><summary>Что именно увидит родитель?</summary><p>Родитель увидит изученные темы, заданные вопросы и темы, к которым стоит вернуться.</p></details><details><summary>Подойдёт ли Ника ребёнку, который уже занимается с репетитором?</summary><p>Да. Ника помогает между занятиями, когда вопрос возник прямо сейчас.</p></details>
+      </div></div></section>
     </main>
+
+    <footer class="site-footer"><div class="container footer-grid"><div><a class="footer-logo" href="#top">Ника <span aria-hidden="true">✦</span></a><p>Персональный AI-репетитор<br />для Вашего ребёнка</p><div class="footer-dots" aria-hidden="true">••••<br />••••</div></div><div><h2>Навигация</h2><a href="#how">Как это работает?</a><a href="#features">Возможности</a><a href="#parents">Для родителей</a><a href="#faq">FAQ</a></div><div id="privacy"><h2>Документы</h2><a href="#privacy">Политика конфиденциальности</a><a href="#privacy">Пользовательское соглашение</a><h2 class="contacts-title">Контакты</h2><a href="mailto:support@example.ru">Поддержка</a></div></div></footer>
   </body>
 </html>
